@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.axel.afinal.LogrosActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#1f1f1f"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:id="@+id/imgLogro"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            app:srcCompat="@mipmap/academico"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="16dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="20dp"
+                    app:srcCompat="@mipmap/medalla3" />
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="22dp"
+                    app:srcCompat="@mipmap/medalla3" />
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="20dp"
+                    app:srcCompat="@mipmap/medalla3" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+
+                    android:layout_width="221dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/holo_red_dark"
+                    android:padding="10dp"
+                    android:layout_margin="12dp"
+                    android:text=" 1er puesto en el campionato nacional de atletismo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13dp" />
+
+                <TextView
+
+                    android:layout_width="221dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="22dp"
+                    android:background="@android:color/holo_blue_dark"
+                    android:padding="10dp"
+                    android:text=" 1er puesto en el campionato nacional de atletismo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13dp" />
+
+                <TextView
+
+                    android:id="@+id/textView4"
+                    android:layout_width="221dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="22dp"
+                    android:background="@android:color/holo_green_light"
+                    android:padding="10dp"
+                    android:text=" 1er puesto en el campionato nacional de atletismo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
