@@ -1,5 +1,6 @@
 package com.example.axel.afinal;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -24,14 +25,6 @@ public class MenuActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -67,9 +60,10 @@ public class MenuActivity extends AppCompatActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        FragmentManager fragmentManager=getSupportFragmentManager();
+        if (id == R.id.usuer) {
+            Intent mEmailSignInButton = new Intent(MenuActivity.this, LoginActivity.class);
+            startActivity(mEmailSignInButton);
         }
 
         return super.onOptionsItemSelected(item);
@@ -86,7 +80,7 @@ public class MenuActivity extends AppCompatActivity
         } else if (id == R.id.nav_logros) {
             fragmentManager.beginTransaction().replace(R.id.contenedor,new LogrosActivity()).commit();
         } else if (id == R.id.nav_asistencia) {
-            fragmentManager.beginTransaction().replace(R.id.contenedor,new AsistenciaActivity()).commit();
+            fragmentManager.beginTransaction().replace(R.id.contenedor,new EventosActivity()).commit();
         } else if (id == R.id.nav_horario) {
             fragmentManager.beginTransaction().replace(R.id.contenedor,new HorarioActivity()).commit();
         } else if (id == R.id.nav_marcas) {

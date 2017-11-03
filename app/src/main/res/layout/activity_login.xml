@@ -54,12 +54,12 @@
                 <AutoCompleteTextView
                     android:id="@+id/email"
                     android:layout_width="313dp"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:background="@android:color/background_light"
                     android:drawableRight="@drawable/ic_account_circle_black_24dp"
                     android:gravity="center"
                     android:hint="Ingrese Usuario"
+                    android:textColorHint="#fff"
                     android:inputType="textPersonName"
                     android:maxLines="1"
                     android:paddingRight="20dp"
@@ -75,10 +75,8 @@
                 <EditText
                     android:id="@+id/password"
                     android:layout_width="318dp"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:background="@android:color/background_light"
-                    android:backgroundTint="@android:color/background_light"
                     android:drawableRight="@drawable/ic_https_black_24dp"
                     android:ems="10"
                     android:imeActionId="@+id/login"
@@ -86,6 +84,7 @@
                     android:inputType="textPassword"
                     android:hint="Ingrese password"
                     android:textColor="#B3B6B7"
+                   android:textColorHint="#fff"
                     android:paddingRight="20dp"/>
 
             </android.support.design.widget.TextInputLayout>

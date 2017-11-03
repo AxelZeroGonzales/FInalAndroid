@@ -7,14 +7,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class AsistenciaActivity extends Fragment {
+public class EventosActivity extends Fragment {
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_asistencia, container, false);
+        return inflater.inflate(R.layout.fragment_eventos, container, false);
     }
 
 
